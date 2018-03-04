@@ -1,0 +1,307 @@
+/*---Globalt----*/
+*{
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	font-size: 60px;
+}
+h2{
+	font-size: 35px;
+	text-decoration: underline;
+}
+p{
+	font-size: 20px;
+}
+
+
+
+
+
+/*----Header-----*/
+header{
+	background-image: url(../img/hero.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+.rubrik-box{
+	background-color: rgba(9, 132, 227, 0.6);
+	padding: 10px;
+}
+
+/*-----Info-Sektion----*/
+.info-sektion h1{
+	text-decoration: underline;
+	text-decoration-color: #0984e3;
+}
+.btnBoka{
+	color: #fff;
+	background-color: #0984e3;
+	width: 200px;
+	height: 60px;
+	font-size: 30px;
+	text-align: center;
+	border-style: solid;
+	border-color: rgba(162, 162, 162, 0.15);
+	border-radius: 5px;
+	border-width: 1px;
+	margin: auto;
+}
+
+
+
+
+
+
+
+/*------Aktivitet-Sektion-----*/
+.aktivitet:nth-of-type(odd){
+	background-color: #f7f7f7;
+}
+
+
+.akti-img{
+	background-size: cover;
+	height: 400px;
+	width: 400px;
+}
+
+.akti-1{
+	background-image: url(../img/hotel-pool.jpg);
+}
+.akti-2{
+	background-image: url(../img/hotel-room.jpg);
+}
+.akti-3{
+	background-image: url(../img/hotel-diner.jpg);
+}
+.akti-4{
+	background-image: url(../img/hotel-spa.jpg);
+}
+.akti-5{
+	background-image: url(../img/hotel-terrace.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------Boka-sektion------*/
+.boka-sektion{
+	border-color:#0984e3;
+	background-color: #f7f7f7;
+}
+.boka-head{
+	background-color: #0984e3;
+	color: #fff;
+}
+
+.form{
+	width: 200px;
+}
+.formContainer{
+	border: solid black 1px;
+	border-top-style: none;
+	padding: 10px	
+}
+.small{
+	width: 60px;
+}
+.lable{
+	width: 200px;
+}
+label{
+	width: 200px;
+}
+.btn-sub button{
+	color: #fff;
+	background-color: #0984e3;
+	width: 200px;
+	height: 60px;
+	font-size: 30px;
+	text-align: center;
+	border-style: solid;
+	border-color: rgba(162, 162, 162, 0.15);
+	border-radius: 5px;
+	border-width: 1px;
+	margin-top: 20px;
+}
+.btnBoka{
+	margin-top: 50px;
+}
+
+
+
+
+
+/*-----Footer----*/
+footer{
+	background-color: #0984e3;
+	color: #fff;
+}
+
+.btnBoka a{
+		text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------Positioning------*/
+/*Anledning till att max-width för mobil ligger på 650px, är för att mobil designen fungerar upp till och med den storleken. samt att tablet-designen börjar fungera bra runt den storleken också.
+/*---Mobil---*/
+@media screen 
+	and (max-width: 650px)
+{
+	p{
+		font-size:20px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	/*----Header----*/
+	.rubrik-box{
+		text-align: center;
+	}
+	
+	/*---Aktiviteter---*/
+	.akti-img{
+		width: 96vw;
+	}
+	.btnBoka{
+		margin-top: 90px;
+	}
+	
+	/*----Info---*/
+	.info-sektion{
+		height: 100vh;
+	}
+	/*---Boka---*/
+	.boka-head{
+		text-align: center;
+	}
+	.form{
+		width:200px;
+		margin: auto;
+	}
+	  
+	
+}
+/*---Tablet---*/
+@media screen 
+  and (min-width: 650px) 
+	and (max-width: 1024px){
+		
+		/*----Aktivitet----*/
+		.aktivitet{
+			overflow-y: hidden;
+		}
+		.akti-img{
+		float: right;
+		width: 50%;
+		}
+		
+		/*----header---*/
+		header{
+			text-align: center;
+		}
+		.rubrik-box{
+
+			padding: 50px;
+		}
+
+		/*---Boka---*/
+	  .boka-head h3{
+		  text-align: center;
+		  font-size: 40px;
+	  }
+		.form{
+			margin: auto;
+		}
+
+		
+}
+
+
+
+/*---Desktop---*/
+@media screen 
+  and (min-width: 1024px) {
+	  	
+		/*----Aktivitet----*/
+		.aktivitet{
+			overflow-y: hidden;
+		}
+	  .akti-img{
+		  float:right;
+		  margin: 40px;
+	  }
+	  .aktivitet:nth-of-type(even) .akti-img{
+		  float:left
+	  }
+	  .text{
+		  padding: 10px
+	  }
+		
+		/*----header---*/
+		header{
+			text-align: center;
+		}
+		.rubrik-box{
+
+			padding: 50px;
+		}
+		/*---Boka---*/
+	  
+	  .boka-head h3{
+		  text-align: center;
+		  font-size: 40px;
+	  }
+		.form{
+			margin: auto;
+			width: 500px;
+		}
+	  
+	  .btn-sub{
+		  margin-left: 125px;
+	  }
+	  .label{
+		  display: 
+	  }
+	  
+	  .right{
+		  transform: translateY(-19px);
+		  float: right;
+	  }
+	  
+	  
+	  /*----Footer-----*/
+	  footer p{
+		 	display: inline-block;
+	  }
+
+
+		
+}
