@@ -171,16 +171,21 @@ footer{
 
 
 /*-------Positioning------*/
-/*Anledning till att max-width för mobil ligger på 650px, är för att mobil designen fungerar upp till och med den storleken. samt att tablet-designen börjar fungera bra runt den storleken också.
 /*---Mobil---*/
 @media screen 
 	and (max-width: 650px)
 {
 	p{
 		font-size:20px;
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
+	
+	.akti-txt p{
+		padding-top: 10px;
+		padding-bottom: 40px;
+	}
+	
 	/*----Header----*/
 	.rubrik-box{
 		text-align: center;
@@ -192,6 +197,10 @@ footer{
 	}
 	.btnBoka{
 		margin-top: 90px;
+	}
+	
+	.text h1{
+		text-align: center;
 	}
 	
 	/*----Info---*/
